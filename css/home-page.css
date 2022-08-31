@@ -1,0 +1,82 @@
+@import url(shared-style.css);
+html,
+body {
+  background-image: url("/assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 43em) {
+  html,
+  body {
+    background-image: url("/assets/home/background-home-tablet.jpg");
+  }
+}
+@media (min-width: 60em) {
+  html,
+  body {
+    background-image: url("/assets/home/background-home-desktop.jpg");
+  }
+}
+
+main .container {
+  text-align: center;
+}
+
+.secondary-heading {
+  margin-block-start: var(--size-M);
+}
+
+.main-heading {
+  margin-block: var(--size-400);
+}
+
+@media (min-width: 43em) {
+  .main-heading {
+    margin-block: var(--size-500);
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  margin-block-start: 5.06rem;
+  font-size: var(--fs-button);
+  background-color: var(--clr-neutral);
+  color: var(--clr-dark);
+  padding: 4em 2.659em;
+  border-radius: 50%;
+}
+
+.button:hover,
+.button:focus-within {
+  box-shadow: 0 0 0 3.5rem rgb(0, 0, 0, 0.5);
+  /* box-shadow: transparent; */
+}
+
+@media (min-width: 43em) {
+  .button {
+    margin-block-start: 9.75rem;
+    margin-block-end: var(--size-800);
+  }
+
+  .text {
+    max-width: 27.75rem;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 60em) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: var(--size-700);
+    margin-block-start: var(--size-500);
+  }
+
+  .text {
+    margin: 0;
+    text-align: left;
+  }
+}

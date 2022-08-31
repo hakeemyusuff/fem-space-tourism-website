@@ -1,0 +1,21 @@
+@import url(shared-style.css);
+html,
+body {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 43em) {
+  html,
+  body {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media (min-width: 60em) {
+  html,
+  body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+  }
+}

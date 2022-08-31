@@ -1,0 +1,363 @@
+:root {
+  /* Color */
+  --clr-light: hsl(231, 77%, 90%);
+  --clr-neutral: hsl(0, 0%, 100%);
+  --clr-dark: hsl(230, 35%, 7%);
+  --nav-background: rgba(255, 255, 255, 0.04);
+
+  /* font-family */
+  --ff-primary: "Bellefair", serif;
+  --ff-secondary: "Barlow Condensed", sans-serif;
+  --ff-s-secondary: "Barlow", sans-serif;
+
+  --ff-heading: var(--ff-primary);
+  --ff-sm-heading: var(--ff-secondary);
+  --ff-sub-heading: var(--ff-secondary);
+  --ff-body: var(--ff-s-secondary);
+
+  /* font-weight */
+  --fw-regular: 400;
+
+  /* font-size */
+  --fs-100: 0.875rem;
+  --fs-200: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-650: 1.75rem;
+  --fs-675: 2rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3.5rem;
+  --fs-900: 5rem;
+  --fs-M: 6.25rem;
+  --fs-MC: 9.375rem;
+
+  --fs-primary-heading-hp: var(--fs-900);
+  --fs-secondary-heading: var(--fs-300);
+  --fs-primary-heading-d: var(--fs-800);
+  --fs-primary-heading-t: var(--fs-600);
+  --fs-small: var(--fs-100);
+  --fs-primary-nav: var(--fs-300);
+  --fs-sec-nav: var(--fs-100);
+  --fs-body: var(--fs-200);
+  --fs-dist: var(--fs-650);
+  --fs-button: var(--fs-500);
+
+  /* size */
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.5rem;
+  --size-600: 2rem;
+  --size-650: 2.5rem;
+  --size-700: 3rem;
+  --size-800: 4rem;
+  --size-900: 5rem;
+  --size-M: 7rem;
+}
+
+@media (min-width: 43em) {
+  :root {
+    --fs-primary-heading-hp: var(--fs-MC);
+    --fs-secondary-heading: var(--fs-500);
+    --fs-primary-heading-d: var(--fs-900);
+    --fs-primary-heading-t: var(--fs-700);
+    --fs-small: var(--fs-100);
+    --fs-primary-nav: var(--fs-100);
+    --fs-sec-nav: var(--fs-300);
+    --fs-body: var(--fs-300);
+    --fs-dist: var(--fs-650);
+    --fs-button: var(--fs-675);
+  }
+}
+@media (min-width: 60em) {
+  :root {
+    --fs-primary-heading-hp: var(--fs-MC);
+    --fs-secondary-heading: var(--fs-650);
+    --fs-primary-heading-d: var(--fs-M);
+    --fs-primary-heading-t: var(--fs-800);
+    --fs-small: var(--fs-100);
+    --fs-primary-nav: var(--fs-300);
+    --fs-sec-nav: var(--fs-300);
+    --fs-body: var(--fs-400);
+    --fs-dist: var(--fs-650);
+    --fs-button: var(--fs-675);
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility class */
+.text-light {
+  color: var(--clr-light);
+}
+
+.text-neutral {
+  color: var(--clr-neutral);
+}
+
+.text-dark {
+  color: var(--clr-dark);
+}
+
+.bg-light {
+  background-color: var(--clr-light);
+}
+
+.bg-neutral {
+  background-color: var(--clr-neutral);
+}
+
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+
+.ff-heading {
+  font-family: var(--ff-heading);
+}
+.ff-sm-heading {
+  font-family: var(--ff-sm-heading);
+}
+.ff-sub-heading {
+  font-family: var(--ff-sub-heading);
+}
+.ff-body {
+  font-family: var(--ff-body);
+}
+
+.fs-primary-heading-hp {
+  font-size: var(--fs-primary-heading-hp);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+.fs-primary-heading-d {
+  font-size: var(--fs-primary-heading-d);
+}
+.fs-primary-heading-t {
+  font-size: var(--fs-primary-heading-t);
+}
+.fs-small {
+  font-size: var(--fs-small);
+}
+.fs-primary-nav {
+  font-size: var(--fs-primary-nav);
+}
+.fs-sec-nav {
+  font-size: var(--fs-sec-nav);
+}
+.fs-body {
+  font-size: var(--fs-body);
+}
+.fs-dist {
+  font-size: var(--fs-dist);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.container {
+  --max-width: 1250px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), (100% - var(--padding) * 2));
+  margin-inline: auto;
+}
+/* General styling */
+body {
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-body);
+  color: var(--clr-light);
+}
+
+/* Header, Navigation */
+.primary-header {
+  position: relative;
+  padding-top: var(--size-500);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.primary-navigation {
+  background-color: var(--nav-background);
+  backdrop-filter: blur(var(--size-400));
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: var(--size-600);
+  padding: var(--size-650) var(--size-700);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--clr-light);
+  font-size: var(--fs-primary-nav);
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 0.125rem;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform ease-in-out 250ms;
+}
+
+.nav-link:is(:hover, :focus)::after {
+  transform: scale(1, 1);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.bold {
+  display: none;
+}
+
+@media (max-width: 43em) {
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    top: var(--size-500);
+    right: var(--size-500);
+    background-color: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+
+  .primary-navigation {
+    top: 0;
+    right: 0;
+    width: 15.875rem;
+    min-height: 100%;
+    transform: translateX(0);
+    transition: transform 350ms;
+  }
+
+  .nav-list {
+    padding: var(--size-M) var(--size-400);
+    display: grid;
+    gap: var(--size-600);
+  }
+
+  .bold {
+    display: inline;
+    font-weight: bold;
+    margin-right: var(--fs-400);
+    color: var(--clr-neutral);
+  }
+  .nav-link::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: var(--size-100);
+    height: var(--size-600);
+    position: absolute;
+    top: -0.4rem;
+    left: 14.6rem;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform ease-in-out 250ms;
+  }
+
+  .nav-link:is(:hover, :focus)::after {
+    transform: scale(1, 1);
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  .primary-navigation[data-visible] {
+    transform: translateX(1515.875rem);
+  }
+}
