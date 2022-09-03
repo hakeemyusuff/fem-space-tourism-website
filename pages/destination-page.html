@@ -11,16 +11,18 @@
       rel="stylesheet"
     />
     <title>Space Tourism</title>
-    <script type="module" src="../main.js"></script>
+    <script type="module" src="../javascripts/main.js"></script>
+    <script type="module" src="../javascripts/destination-page.js"></script>
     <link rel="stylesheet" href="../css/destination-page.css" />
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"
+          <a href="#" class="logo"
             ><img src="/assets/shared/logo.svg" alt="space image"
           /></a>
+          <div class="hr"></div>
           <nav class="primary-navigation" id="primay-navigation">
             <ul role="list" class="nav-list" aria-label="primary-navigation">
               <li>
@@ -29,7 +31,7 @@
                 >
               </li>
               <li>
-                <a href="destination-page.html" class="nav-link"
+                <a href="destination-page.html" class="nav-link active"
                   ><span class="bold">01</span> DESTINATION</a
                 >
               </li>
@@ -67,6 +69,52 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="container animateWrap">
+        <div class="even-column">
+          <section>
+            <h1
+              class="fs-secondary-heading text-neutral ff-sm-heading| secondary-heading"
+            >
+              <span class="number">01</span> Pick your destination
+            </h1>
+            <img src="" alt="" class="destinations-image" />
+          </section>
+          <section class="sec-two">
+            <nav class="secondary-navigation | fs-sec-nav">
+              <ul class="destinations-list">
+                <li><a class="sec-nav-link | moon activeLink">MOON</a></li>
+                <li><a class="sec-nav-link | mars">MARS</a></li>
+                <li><a class="sec-nav-link | europa">EUROPA</a></li>
+                <li><a class="sec-nav-link | titan">TITAN</a></li>
+              </ul>
+            </nav>
+            <div class="content">
+              <h2
+                class="fs-primary-heading-d text-neutral ff-heading | primary-heading"
+              ></h2>
+              <p class="fs-body | body-text"></p>
+            </div>
+            <hr class="horizontal-line" />
+            <div class="destination-info">
+              <div class="distance">
+                <h3 class="fs-small text-light ff-sm-heading">AVG. DISTANCE</h3>
+                <p
+                  class="fs-dist text-neutral ff-heading | avg-dist spacer"
+                ></p>
+              </div>
+              <div class="travel-time-section">
+                <h3 class="fs-small text-light ff-sm-heading">
+                  Est. travel time
+                </h3>
+                <p
+                  class="fs-dist text-neutral ff-heading | travel-time spacer"
+                ></p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
