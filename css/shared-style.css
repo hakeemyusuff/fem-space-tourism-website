@@ -37,6 +37,7 @@
   --fs-secondary-heading: var(--fs-300);
   --fs-primary-heading-d: var(--fs-800);
   --fs-primary-heading-t: var(--fs-600);
+  --fs-terminology: var(--fs-100);
   --fs-small: var(--fs-100);
   --fs-primary-nav: var(--fs-300);
   --fs-sec-nav: var(--fs-100);
@@ -64,6 +65,7 @@
     --fs-secondary-heading: var(--fs-500);
     --fs-primary-heading-d: var(--fs-900);
     --fs-primary-heading-t: var(--fs-700);
+    --fs-terminology: var(--fs-300);
     --fs-small: var(--fs-100);
     --fs-primary-nav: var(--fs-100);
     --fs-sec-nav: var(--fs-300);
@@ -78,6 +80,7 @@
     --fs-secondary-heading: var(--fs-650);
     --fs-primary-heading-d: var(--fs-900);
     --fs-primary-heading-t: var(--fs-800);
+    --fs-terminology: var(--fs-300);
     --fs-small: var(--fs-100);
     --fs-primary-nav: var(--fs-300);
     --fs-sec-nav: var(--fs-200);
@@ -202,6 +205,9 @@ svg {
 .fs-primary-heading-t {
   font-size: var(--fs-primary-heading-t);
 }
+.fs-terminology {
+  font-size: var(--fs-terminology);
+}
 .fs-small {
   font-size: var(--fs-small);
 }
@@ -278,6 +284,11 @@ body {
   display: flex;
   gap: var(--size-600);
   padding: 2.25rem var(--size-700);
+}
+
+.number {
+  opacity: 0.25;
+  margin-inline-end: var(--size-100);
 }
 
 @media (min-width: 60em) {

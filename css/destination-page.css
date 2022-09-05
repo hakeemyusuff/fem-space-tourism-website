@@ -16,7 +16,7 @@
 
 @media (min-width: 60em) {
   :root {
-    --img-width: 24rem;
+    --img-width: 23rem;
     --list-gap: 2.25rem;
     --primary-heading-margin: 2rem;
     --hr-line: var(--size-100);
@@ -51,11 +51,6 @@ main .container {
 .secondary-heading {
   margin-block-start: 1.125rem;
   text-transform: uppercase;
-}
-
-.number {
-  opacity: 0.25;
-  margin-inline-end: var(--size-100);
 }
 
 .destinations-image {
@@ -204,9 +199,9 @@ main .container {
 }
 
 .container {
-  transition: opacity 250ms;
+  transition: transform 250ms;
 }
 
 .fadeIn {
-  opacity: 0.3;
+  transform: scale(0, 1);
 }

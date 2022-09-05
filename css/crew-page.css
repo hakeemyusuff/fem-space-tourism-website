@@ -1,4 +1,40 @@
 @import url(shared-style.css);
+:root {
+  --sec-heading-block-start: 1.5rem;
+  --image-width: 20.43rem;
+  --image-block-start: 2rem;
+  --paginations-block: 2rem;
+  --name-block-start: 0.5rem;
+  --bio-block-start: 1rem;
+}
+
+@media (min-width: 43em) {
+  :root {
+    --sec-heading-block-start: 2.5rem;
+    --image-width: 28.5rem;
+    --image-block-start: 0;
+    --paginations-block: 2.5rem;
+    --name-block-start: 0.5rem;
+    --bio-block-start: 1rem;
+    --role-block-start: 3.75rem;
+    --crew-info-width: 28.625rem;
+  }
+}
+
+@media (min-width: 60em) {
+  :root {
+    --sec-heading-block-start: 4.75rem;
+    --image-width: 31.25rem;
+    --image-block-start: 0;
+    --paginations-block: 0;
+    --paginations-top: 1.5rem;
+    --paginations-bottom: 1rem;
+    --name-block-start: 0.9375rem;
+    --bio-block-start: 1.6875rem;
+    --role-block-start: 3rem;
+  }
+}
+
 html,
 body {
   background-image: url("../assets/crew/background-crew-mobile.jpg");
@@ -18,4 +54,126 @@ body {
   body {
     background-image: url("../assets/crew/background-crew-desktop.jpg");
   }
+}
+main .container {
+  text-align: center;
+}
+
+.secondary-heading {
+  margin-block-start: var(--sec-heading-block-start);
+}
+
+.crews-image {
+  width: var(--image-width);
+  margin-block-start: var(--image-block-start);
+  margin-inline: auto;
+}
+.paginations {
+  display: flex;
+  gap: 1rem;
+  margin-block: var(--paginations-block);
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.pagination {
+  cursor: pointer;
+  background-color: #808080;
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 50%;
+}
+
+.pagination:hover,
+.pagination:focus {
+  background-color: var(--clr-light);
+}
+
+.crew-name {
+  margin-block-start: var(--name-block-start);
+}
+
+.bio {
+  margin-block-start: var(--bio-block-start);
+}
+
+@media (min-width: 43em) {
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "crewInfo"
+      "pagination"
+      "image";
+    justify-content: center;
+    gap: var(--size-500);
+  }
+  hr {
+    display: none;
+  }
+  .secondary-heading {
+    text-align: left;
+  }
+
+  .crew-info {
+    width: var(--crew-info-width);
+    margin-inline: auto;
+    grid-area: crewInfo;
+  }
+
+  .paginations {
+    grid-area: pagination;
+  }
+
+  .crews-image {
+    grid-area: image;
+  }
+
+  .role {
+    margin-block-start: var(--role-block-start);
+  }
+}
+
+@media (min-width: 60em) {
+  .layout {
+    grid-template-areas:
+      "crewInfo image"
+      "pagination image";
+    align-items: stretch;
+  }
+
+  .crews-image {
+    max-height: 31.25rem;
+    margin-block-start: -2.9rem;
+    align-self: baseline;
+  }
+
+  .paginations {
+    margin: var(--paginations-top) auto var(--paginations-bottom) auto;
+  }
+
+  .crew-name {
+    line-height: 1;
+  }
+
+  .hr {
+    top: 3.9rem;
+    left: 8rem;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.change-effect {
+  transition: transform 100ms, opacity 250ms;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateX(10rem);
+}
+
+.active-button {
+  background-color: white;
 }

@@ -1,4 +1,41 @@
 @import url(shared-style.css);
+:root {
+  /* --img-width: 23.44rem; */
+  --sec-heading-block-start: 1.5rem;
+  --img-block-start: 2rem;
+  --paginations-block-start: 2.125rem;
+  --term-block-start: 1.625rem;
+  --tech-name-block-start: 0.5625rem;
+  --description-block-start: 1rem;
+  --pagination-size: 2.5rem;
+}
+
+@media (min-width: 43em) {
+  :root {
+    /* --img-width: 23.44rem; */
+    --sec-heading-block-start: 2.5rem;
+    --img-block-start: 3.75rem;
+    --paginations-block-start: 3.5rem;
+    --term-block-start: 2.75rem;
+    --tech-name-block-start: 1rem;
+    --description-block-start: 1rem;
+    --tech-info-width: 28.625rem;
+  }
+}
+
+@media (min-width: 60em) {
+  :root {
+    --sec-heading-block-start: 4.75rem;
+    --img-block-start: 0;
+    --paginations-block-start: 0;
+    --term-block-start: 0;
+    --tech-name-block-start: 0.6875rem;
+    --description-block-start: 1.0625rem;
+    --tech-info-width: 29.375rem;
+    --pagination-size: 5rem;
+  }
+}
+
 html,
 body {
   background-image: url("../assets/technology/background-technology-mobile.jpg");
@@ -18,4 +55,117 @@ body {
   body {
     background-image: url("../assets/technology/background-technology-desktop.jpg");
   }
+}
+main .container {
+  text-align: center;
+}
+
+.secondary-heading {
+  margin-block-start: var(--sec-heading-block-start);
+}
+
+.tech-image-landscape {
+  margin-inline: auto;
+  margin-block-start: var(--img-block-start);
+}
+
+.tech-image-portrait {
+  display: none;
+}
+
+.paginations {
+  display: flex;
+  gap: var(--size-400);
+  justify-content: center;
+  margin-block-start: var(--paginations-block-start);
+}
+
+.pagination {
+  cursor: pointer;
+  height: var(--pagination-size);
+  width: var(--pagination-size);
+  background-color: transparent;
+  color: var(--clr-neutral);
+  border: 0.0625rem solid #45364e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination:hover,
+.pagination:focus {
+  border-color: var(--clr-light);
+}
+
+.terminology {
+  margin-block-start: var(--term-block-start);
+}
+
+.description {
+  margin-block-start: var(--description-block-start);
+}
+@media (min-width: 43em) {
+  .tech-info {
+    width: var(--tech-info-width);
+  }
+}
+@media (min-width: 60em) {
+  main .container {
+    text-align: left;
+  }
+
+  .hr {
+    top: 3.9rem;
+    left: 8rem;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-areas: "pagination tech-info image";
+  }
+
+  .tech-image-landscape {
+    display: none;
+  }
+
+  .tech-image-portrait {
+    display: block;
+    grid-area: image;
+    justify-self: end;
+    width: 25rem;
+  }
+
+  .paginations {
+    flex-direction: column;
+    grid-area: pagination;
+    gap: var(--size-600);
+    margin-inline-start: 4rem;
+  }
+
+  .tech-info {
+    width: var(--tech-info-width);
+    grid-area: tech-info;
+    align-self: center;
+  }
+}
+
+.active-button {
+  background-color: var(--clr-neutral);
+  color: var(--clr-dark);
+  border: 0.15rem solid #45364e;
+  background-clip: padding-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.change-effect {
+  transition: transform 100ms, opacity 100ms;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateX(10rem);
 }

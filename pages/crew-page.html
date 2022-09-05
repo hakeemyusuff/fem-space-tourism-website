@@ -12,15 +12,17 @@
     />
     <title>Space Tourism</title>
     <script type="module" src="../javascripts/main.js"></script>
+    <script defer src="../javascripts/crew-page.js"></script>
     <link rel="stylesheet" href="../css/crew-page.css" />
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"
+          <a href="../index.html"
             ><img src="/assets/shared/logo.svg" alt="space image"
           /></a>
+          <div class="hr"></div>
           <nav class="primary-navigation" id="primay-navigation">
             <ul role="list" class="nav-list" aria-label="primary-navigation">
               <li>
@@ -67,6 +69,33 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="container change-effect">
+        <h1
+          class="fs-secondary-heading ff-sm-heading text-neutral | secondary-heading"
+        >
+          <span class="number">02</span> MEET YOUR CREW
+        </h1>
+        <div class="layout">
+          <img src="" alt="" class="crews-image" />
+          <hr />
+          <div class="paginations">
+            <div class="pagination active-button" id="pagination-1"></div>
+            <div class="pagination" id="pagination-2"></div>
+            <div class="pagination" id="pagination-3"></div>
+            <div class="pagination" id="pagination-4"></div>
+          </div>
+          <div class="crew-info">
+            <h2
+              class="ff-heading fs-secondary-heading text-neutral | role"
+            ></h2>
+            <h3
+              class="ff-heading fs-primary-heading-t text-neutral | crew-name"
+            ></h3>
+            <p class="bio"></p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

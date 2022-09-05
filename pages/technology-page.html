@@ -12,15 +12,17 @@
     />
     <title>Space Tourism</title>
     <script type="module" src="../javascripts/main.js"></script>
+    <script src="../javascripts/technology-page.js" defer></script>
     <link rel="stylesheet" href="../css/technology-page.css" />
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"
+          <a href="../index.html"
             ><img src="/assets/shared/logo.svg" alt="space image"
           /></a>
+          <div class="hr"></div>
           <nav class="primary-navigation" id="primay-navigation">
             <ul role="list" class="nav-list" aria-label="primary-navigation">
               <li>
@@ -67,6 +69,40 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="change-effect">
+        <div class="container">
+          <h1
+            class="fs-secondary-heading ff-sm-heading text-neutral | secondary-heading"
+          >
+            <span class="number">02</span> SPACE LAUNCH 101
+          </h1>
+        </div>
+        <div class="layout">
+          <img src="" alt="" class="tech-image-portrait" />
+          <img src="" alt="" class="tech-image-landscape" />
+          <div class="paginations container">
+            <div
+              tabindex="0"
+              class="pagination active-button"
+              id="pagination-1"
+            >
+              1
+            </div>
+            <div tabindex="0" class="pagination" id="pagination-2">2</div>
+            <div tabindex="0" class="pagination" id="pagination-3">3</div>
+          </div>
+          <div class="container | tech-info">
+            <h2 class="fs-terminology ff-title | terminology">
+              THE TERMINOLOGY…
+            </h2>
+            <h3
+              class="ff-primary-heading fs-primary-heading-t text-neutral | tech-name"
+            ></h3>
+            <p class="description"></p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
