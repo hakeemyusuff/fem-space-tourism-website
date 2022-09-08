@@ -383,12 +383,22 @@ body {
     cursor: pointer;
     display: block;
     position: fixed;
-    top: var(--size-500);
+    top: var(--size-600);
     right: var(--size-500);
     background-color: transparent;
     border: 0;
     padding: 0.5em;
     z-index: 999;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mobile-nav-toggle[Aria-expanded="false"] {
+    background-image: url(../assets/shared/icon-close.svg);
   }
 
   .primary-navigation {
@@ -439,10 +449,6 @@ body {
     position: absolute;
     top: -0.4rem;
     left: 14.6rem;
-  }
-
-  .icon-close {
-    display: none;
   }
 
   .primary-navigation[data-visible] {

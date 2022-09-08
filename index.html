@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <title>Space Tourism</title>
-    <script type="module" src=".javascripts/main.js"></script>
+    <script defer src=".javascripts/main.js"></script>
     <link rel="stylesheet" href="css/home-page.css" />
   </head>
   <body>
@@ -51,18 +51,6 @@
             aria-expanded="false"
           >
             <span class="visually-hidden">Menu</span>
-            <img
-              src="/assets/shared/icon-hamburger.svg"
-              alt=""
-              aria-hidden="true"
-              class="icon-open"
-            />
-            <img
-              src="/assets/shared/icon-close.svg"
-              alt=""
-              aria-hidden="true"
-              class="icon-close"
-            />
           </button>
         </div>
       </div>
@@ -87,7 +75,9 @@
             </p>
           </div>
           <div>
-            <button class="button">EXPLORE</button>
+            <a href="pages/destination-page.html"
+              ><button class="button">EXPLORE</button></a
+            >
           </div>
         </div>
       </div>
