@@ -22,7 +22,7 @@ const renderDestination = (dest) => {
         }
       }
 
-      imgElement.setAttribute("src", `.${finalDestination.images.png}`);
+      imgElement.setAttribute("src", ` ${finalDestination.images.png}`);
       imgElement.setAttribute("alt", `${finalDestination.name} image.`);
       destName.innerText = finalDestination.name.toUpperCase();
       description.innerText = finalDestination.description;

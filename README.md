@@ -28,15 +28,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshots\home.png)
-![](screenshots\destination.png)
-![](screenshots\crew.png)
-![](screenshots\technology.png)
+![home page](screenshots\home.png)
+![destination page](screenshots\destination.png)
+![crew page](screenshots\crew.png)
+![technology](screenshots\technology.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
+
+- Live Site URL: [hosted on netlify](https://yusuffspacetourism.netlify.app)
 
 ## My process
 
@@ -66,8 +67,8 @@ const getCrewInformation = (crew) => {
           crewInfo = crewObject;
         }
       }
-      crewsImage.setAttribute("src", `.${crewInfo.images.png}`);
-      crewsImage.setAttribute("alt", `.${crewInfo.name} image.`);
+      crewsImage.setAttribute("src", ` ${crewInfo.images.png}`);
+      crewsImage.setAttribute("alt", ` ${crewInfo.name} image.`);
       crewRole.innerText = crewInfo.role.toUpperCase();
       crewName.innerText = crewInfo.name.toUpperCase();
       crewBio.innerText = crewInfo.bio;
@@ -83,5 +84,6 @@ I am currently comfortable with css so i am diving into the world of javascript,
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://twitter.com/_ysf_a)
+<!-- - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername) -->
+
+- Twitter - [@\_ysf_a](https://twitter.com/_ysf_a)
