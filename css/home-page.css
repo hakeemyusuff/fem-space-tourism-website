@@ -1,7 +1,7 @@
 @import url(shared-style.css);
 html,
 body {
-  background-image: url("/assets/home/background-home-mobile.jpg");
+  background-image: url("../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,13 +10,13 @@ body {
 @media (min-width: 43em) {
   html,
   body {
-    background-image: url("/assets/home/background-home-tablet.jpg");
+    background-image: url("../assets/home/background-home-tablet.jpg");
   }
 }
 @media (min-width: 60em) {
   html,
   body {
-    background-image: url("/assets/home/background-home-desktop.jpg");
+    background-image: url("../assets/home/background-home-desktop.jpg");
   }
 }
 

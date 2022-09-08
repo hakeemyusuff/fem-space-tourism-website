@@ -84,4 +84,4 @@ I am currently comfortable with css so i am diving into the world of javascript,
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
 
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://twitter.com/_ysf_a)
+- Twitter - [@\_ysf_a](https://twitter.com/_ysf_a)
