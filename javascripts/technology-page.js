@@ -20,10 +20,10 @@ const getTechInformation = (tech) => {
           techInfo = techObject;
         }
       }
-      techImagePotrait.setAttribute("src", ` ${techInfo.images.portrait}`);
-      techImageLandscape.setAttribute("src", ` ${techInfo.images.landscape}`);
-      techImagePotrait.setAttribute("alt", `${techInfo.name} image.`);
-      techImageLandscape.setAttribute("alt", `${techInfo.name} image.`);
+      techImagePotrait.setAttribute("src", `.${techInfo.images.portrait}`);
+      techImageLandscape.setAttribute("src", `.${techInfo.images.landscape}`);
+      techImagePotrait.setAttribute("alt", `.${techInfo.name} image.`);
+      techImageLandscape.setAttribute("alt", `.${techInfo.name} image.`);
       techName.innerText = techInfo.name.toUpperCase();
       description.innerText = techInfo.description;
     });

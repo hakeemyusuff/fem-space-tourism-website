@@ -67,8 +67,8 @@ const getCrewInformation = (crew) => {
           crewInfo = crewObject;
         }
       }
-      crewsImage.setAttribute("src", ` ${crewInfo.images.png}`);
-      crewsImage.setAttribute("alt", ` ${crewInfo.name} image.`);
+      crewsImage.setAttribute("src", `  .${crewInfo.images.png}`);
+      crewsImage.setAttribute("alt", `  .${crewInfo.name} image.`);
       crewRole.innerText = crewInfo.role.toUpperCase();
       crewName.innerText = crewInfo.name.toUpperCase();
       crewBio.innerText = crewInfo.bio;
