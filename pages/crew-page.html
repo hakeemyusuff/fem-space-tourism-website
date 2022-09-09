@@ -12,15 +12,15 @@
     />
     <title>Space Tourism</title>
     <script defer src="../javascripts/main.js"></script>
-    <script src="../javascripts/technology-page.js" defer></script>
-    <link rel="stylesheet" href="../css/technology-page.css" />
+    <script defer src="../javascripts/crew-page.js"></script>
+    <link rel="stylesheet" href="../css/crew-page.css" />
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
           <a href="../index.html"
-            ><img src="/assets/shared/logo.svg" alt="space image"
+            ><img src="../assets/shared/logo.svg" alt="space image"
           /></a>
           <div class="hr"></div>
           <nav class="primary-navigation" id="primay-navigation">
@@ -36,12 +36,12 @@
                 >
               </li>
               <li>
-                <a href="crew-page.html" class="nav-link"
+                <a href="crew-page.html" class="nav-link active"
                   ><span class="bold">02</span> CREW</a
                 >
               </li>
               <li>
-                <a href="technology-page.html" class="nav-link active"
+                <a href="technology-page.html" class="nav-link"
                   ><span class="bold">03</span> TECHNOLOGY</a
                 >
               </li>
@@ -58,36 +58,29 @@
       </div>
     </header>
     <main>
-      <div class="change-effect">
-        <div class="container">
-          <h1
-            class="fs-secondary-heading ff-sm-heading text-neutral | secondary-heading"
-          >
-            <span class="number">02</span> SPACE LAUNCH 101
-          </h1>
-        </div>
+      <div class="container change-effect">
+        <h1
+          class="fs-secondary-heading ff-sm-heading text-neutral | secondary-heading"
+        >
+          <span class="number">02</span> MEET YOUR CREW
+        </h1>
         <div class="layout">
-          <img src="" alt="" class="tech-image-portrait" />
-          <img src="" alt="" class="tech-image-landscape" />
-          <div class="paginations container">
-            <div
-              tabindex="0"
-              class="pagination active-button"
-              id="pagination-1"
-            >
-              1
-            </div>
-            <div tabindex="0" class="pagination" id="pagination-2">2</div>
-            <div tabindex="0" class="pagination" id="pagination-3">3</div>
+          <img src="" alt="" class="crews-image" />
+          <hr />
+          <div class="paginations">
+            <div class="pagination active-button" id="pagination-1"></div>
+            <div class="pagination" id="pagination-2"></div>
+            <div class="pagination" id="pagination-3"></div>
+            <div class="pagination" id="pagination-4"></div>
           </div>
-          <div class="container | tech-info">
-            <h2 class="fs-terminology ff-title | terminology">
-              THE TERMINOLOGY…
-            </h2>
+          <div class="crew-info">
+            <h2
+              class="ff-heading fs-secondary-heading text-neutral | role"
+            ></h2>
             <h3
-              class="ff-primary-heading fs-primary-heading-t text-neutral | tech-name"
+              class="ff-heading fs-primary-heading-t text-neutral | crew-name"
             ></h3>
-            <p class="description"></p>
+            <p class="bio"></p>
           </div>
         </div>
       </div>

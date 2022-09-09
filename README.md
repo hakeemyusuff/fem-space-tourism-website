@@ -28,10 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![home page](screenshots\home.png)
-![destination page](screenshots\destination.png)
-![crew page](screenshots\crew.png)
-![technology](screenshots\technology.png)
+![home page](home.png)
+![destination page](destination.png)
+![crew page](crew.png)
+![technology](technology.png)
 
 ### Links
 
